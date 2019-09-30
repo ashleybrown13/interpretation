@@ -38,13 +38,18 @@ function setup() {
 	line(501, 103, 385, 103)
 	line(397, 80, 489, 80)
 //beige under wall left
-	noStroke()
+	stroke(0, 0, 0)
+	strokeWeight(1)
 	fill(215, 121, 40)
 	quad(0, 366, 142, 286, 142, 422, 0, 515);
 //beige under wall center
-
+	stroke(0, 0, 0)
+	fill(215, 121, 40)
+	quad(142, 286, 795, 286, 795, 422, 142, 422);
 //beige under wall right
-
+	stroke(0, 0, 0)
+	fill(215, 121, 40)
+	quad(795, 286, 1234, 349, 1234, 513, 795, 422);
 //floor
 
 //lamp one
@@ -93,6 +98,12 @@ function setup() {
 	vertex(518, 406)
 	endShape()
 
+//pool table 
+	fill(60, 8, 15)
+	quad(533, 423, 544, 473, 855, 707, 855, 666);
+
+	fill(60, 8, 15)
+	quad(855, 666, 862, 707, 1026, 555, 1025, 517);
 
 //chair
 
