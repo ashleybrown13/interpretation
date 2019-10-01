@@ -210,6 +210,10 @@ function setup() {
 	noStroke()
 	fill(253, 199, 49)
 	ellipse(192, 132, 60, 60)
+//string to ceiling 
+	stroke(0, 0, 0)
+	strokeWeight(3)
+	line(192, 77, 192, 3)
 //lamp 1 top
 	noStroke()
 	fill(253, 199, 49)
@@ -222,6 +226,10 @@ function setup() {
 	noStroke()
 	fill(253, 199, 49)
 	ellipse(803, 115, 20, 20)
+//string to ceiling 
+	stroke(0, 0, 0)
+	strokeWeight(3)
+	line(803, 0, 803, 103)
 //lamp three
 	noStroke()
 	fill(253, 199, 49)
@@ -230,6 +238,10 @@ function setup() {
 	noStroke()
 	fill(253, 199, 49)
 	ellipse(1106, 33, 20, 20)
+//string to ceiling 
+	stroke(0, 0, 0)
+	strokeWeight(3)
+	line(1106, 22, 1106, 0)
 //clock outline
 	stroke(77, 10, 4)
 	fill(77, 10, 4)
@@ -437,6 +449,7 @@ function setup() {
 	stroke(200, 100, 50)
 	fill(233, 238, 156)
 	ellipse(179, 409, 80, 65)
+
 //people
 	//man by pool
 	noStroke()
