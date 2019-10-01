@@ -273,6 +273,89 @@ function setup() {
 
 	fill(155, 72, 11)
 	ellipse(1022, 625, 10, 10)
+//bar
+	noStroke()
+	fill(185, 195, 44)
+	quad(381, 286, 590, 286, 590, 420, 381, 420);
+//bottle tops
+	stroke(80, 15, 10)
+	strokeWeight(2)
+
+	fill(155, 72, 11)
+	ellipse(393, 240, 8, 15)
+	fill(155, 72, 11)
+	ellipse(473, 240, 8, 15)
+	fill(155, 72, 11)
+	ellipse(408, 240, 8, 15)
+	fill(155, 72, 11)
+	ellipse(452, 240, 8, 15)
+	fill(155, 72, 11)
+	ellipse(433, 240, 8, 15)
+
+	fill(155, 72, 11)
+	ellipse(580, 240, 8, 15)
+	fill(155, 72, 11)
+	ellipse(549, 240, 8, 15)
+	fill(155, 72, 11)
+	ellipse(561, 240, 8, 15)
+//bottles
+	fill(155, 72, 11)
+	ellipse(393, 266, 20, 40)
+
+	fill(155, 72, 11)
+	ellipse(473, 266, 20, 40)
+
+	fill(155, 72, 11)
+	ellipse(408, 266, 20, 40)
+
+	fill(155, 72, 11)
+	ellipse(452, 266, 20, 40)
+
+	fill(155, 72, 11)
+	ellipse(433, 266, 20, 40)
+
+	fill(155, 72, 11)
+	ellipse(580, 266, 20, 40)
+
+	fill(155, 72, 11)
+	ellipse(549, 266, 20, 40)
+
+	fill(155, 72, 11)
+	ellipse(561, 266, 20, 40)
+//flowers
+	stroke(80, 15, 10)
+	strokeWeight(2)
+	fill(247, 199, 29)
+	ellipse(510, 255, 50, 60)
+
+	fill(255, 235, 165)
+	ellipse(487, 197, 15, 15)
+	fill(510, 190, 165)
+	ellipse(515, 206, 15, 15)
+	fill(255, 235, 165)
+	ellipse(528, 209, 15, 15)
+	fill(255, 235, 165)
+	ellipse(524, 195, 15, 15)
+	fill(255, 235, 165)
+	ellipse(502, 220, 15, 15)
+
+	fill(255, 235, 165)
+	ellipse(520, 221, 15, 15)
+	fill(510, 190, 165)
+	ellipse(487, 221, 15, 15)
+	fill(255, 235, 165)
+	ellipse(497, 209, 15, 15)
+	fill(255, 235, 165)
+	ellipse(502, 188, 15, 15)
+	fill(255, 235, 165)
+	ellipse(539, 223, 15, 15)
+
+	fill(255, 235, 165)
+	ellipse(504, 199, 15, 15)
+	fill(510, 190, 165)
+	ellipse(517, 185, 15, 15)
+	fill(255, 235, 165)
+	ellipse(539, 195, 15, 15)
 
 //pool table 
 	strokeWeight(4)
@@ -320,15 +403,58 @@ function setup() {
 
 //door
 	noStroke()
-	fill(255, 255, 255)
-	quad(252, 154, 252, 420, 400, 154, 400, 420);
+	fill(255, 220, 34)
+	quad(252, 154, 380, 154, 380, 420, 252, 420);
+//curtains
+	beginShape()
+	strokeWeight(3)
+	stroke(168, 95, 26)
+	fill(180, 107, 30)
+	vertex(251, 315)
+	vertex(298, 199)
+	vertex(334, 181)
+	vertex(379, 273)
+	vertex(380, 154)
+	vertex(252, 154)
+	endShape()
 
 //chair
 
 //table
+	beginShape()
+	strokeWeight(3)
+	stroke(168, 95, 26)
+	fill(89, 52, 26)
+	vertex(154, 437)
+	vertex(150, 491)
+	vertex(135, 537)
+	vertex(217, 537)
+	vertex(209, 491)
+	vertex(205, 437)
+	vertex(179, 440)
+	endShape()
 
+	stroke(200, 100, 50)
+	fill(233, 238, 156)
+	ellipse(179, 409, 80, 65)
 //people
+	//man by pool
+	noStroke()
+	fill(253, 159, 96)
+	ellipse(947, 284, 35, 50)
 
+	strokeWeight(5)
+	stroke(180, 178, 30)
+	point(936, 265)
+	point(944, 263)
+	point(944, 266)
+	point(949, 263)
+	point(954, 265) 
+	point(960, 271) 
+	point(958, 264)
+	point(934, 268) 
+	point(945, 263) 
+	point(950, 263) 
 
 }
 
