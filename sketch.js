@@ -22,7 +22,7 @@ function setup() {
 //green wall
     stroke(0, 0, 0)
 	strokeWeight(1)
-	fill(96, 175, 23)
+	fill(8, 130, 120)
 	quad(0, 0, 140, 75, 795, 75, 1234, 0);
 //brown wall under clock
 	stroke(0, 0, 0)
@@ -30,7 +30,7 @@ function setup() {
 	fill(60, 8, 15)
 	quad(341, 0, 341, 150, 513, 150, 513, 0);
 //green 'paint' under clock
-	stroke(96, 175, 23)
+	stroke(8, 130, 120)
 	strokeWeight(4)
 	line(373, 92, 471, 92)
 	line(362, 116, 491, 116)
@@ -364,9 +364,9 @@ function setup() {
 //bar
 	noStroke()
 	fill(185, 195, 44)
-	quad(381, 286, 590, 286, 590, 420, 381, 420);
+	quad(381, 286, 653, 286, 653, 420, 381, 420);
 	fill(155, 175, 24)
-	quad(406, 302, 406, 404, 566, 404, 566, 302);
+	quad(406, 302, 406, 404, 630, 404, 630, 302);
 //bottle tops
 	stroke(80, 15, 10)
 	strokeWeight(2)
@@ -388,6 +388,14 @@ function setup() {
 	ellipse(549, 240, 8, 15)
 	fill(155, 72, 11)
 	ellipse(561, 240, 8, 15)
+
+	fill(155, 72, 11)
+	ellipse(600, 240, 8, 15)
+	fill(155, 72, 11)
+	ellipse(622, 240, 8, 15)
+	fill(155, 72, 11)
+	ellipse(634, 240, 8, 15)
+
 //bottles
 	fill(155, 72, 11)
 	ellipse(393, 266, 20, 40)
@@ -412,6 +420,16 @@ function setup() {
 
 	fill(155, 72, 11)
 	ellipse(561, 266, 20, 40)
+
+	fill(155, 72, 11)
+	ellipse(600, 266, 20, 40)
+
+	fill(155, 72, 11)
+	ellipse(622, 266, 20, 40)
+
+	fill(155, 72, 11)
+	ellipse(634, 266, 20, 40)
+
 //flowers
 	stroke(80, 15, 10)
 	strokeWeight(2)
@@ -446,6 +464,34 @@ function setup() {
 	ellipse(517, 185, 15, 15)
 	fill(255, 235, 165)
 	ellipse(539, 195, 15, 15)
+//red table 
+	fill(198, 48, 31)
+	beginShape()
+	vertex(684, 319)
+	vertex(774, 318)
+	vertex(807, 337)
+	vertex(737, 344)
+	vertex(684, 319)
+	endShape()
+//table legs
+	line(737, 345, 737, 377)
+	line(806, 337, 806, 396)
+	line(685, 318, 685, 379)
+
+//card table
+	fill(167, 199, 197)
+	beginShape()
+	vertex(791, 363)
+	vertex(833, 341)
+	vertex(1091, 432)
+	vertex(1051, 465)
+	vertex(791, 363)
+	endShape()
+
+	line(823, 379,824, 415)
+	line(845, 386, 845, 417)
+	line(1023, 455, 1023, 499)
+	line(1044, 463, 1044, 495)
 
 //pool table 
 	strokeWeight(4)
@@ -490,11 +536,27 @@ function setup() {
 	stroke(96, 175, 23)
 	strokeWeight(3)
 	line(934, 513, 934, 526)
+//pool stick
+	stroke(173, 114, 45)
+	fill(173, 114, 45)
+	beginShape()
+	curveVertex(719, 379)
+	curveVertex(719, 379)
+	curveVertex(915, 490)
+	curveVertex(902, 490)
+	curveVertex(719, 379)
+	curveVertex(719, 379)
+	endShape()
 
 //door
 	noStroke()
 	fill(255, 220, 34)
 	quad(252, 154, 380, 154, 380, 420, 252, 420);
+//green in door
+	stroke(168, 95, 26)
+	strokeWeight(2)
+	fill(185, 195, 44)
+	rect(317, 228, 50, 190)
 //curtains
 	beginShape()
 	strokeWeight(3)
@@ -507,8 +569,12 @@ function setup() {
 	vertex(380, 154)
 	vertex(252, 154)
 	endShape()
+//mirror on red back wall
+	stroke(61, 39, 4)
+	strokeWeight(5)
+	fill(198, 237, 173)
+	rect(170, 209, 50, 60)
 
-//chair
 
 //table
 	beginShape()
@@ -527,25 +593,52 @@ function setup() {
 	stroke(200, 100, 50)
 	fill(233, 238, 156)
 	ellipse(179, 409, 80, 65)
-
-//people
-	//man by pool
+//window outside
+	beginShape()
+	strokeWeight(7) 
+	stroke(196, 143, 37)
+	fill(69, 65, 58)
+	vertex(917, 289)
+	vertex(997, 299)
+	vertex(994, 196)
+	vertex(994, 170)
+	vertex(990, 153)
+	vertex(982, 139)
+	vertex(967, 129)
+	vertex(948, 131)
+	vertex(936, 140)
+	vertex(927, 151)
+	vertex(922, 171)
+	vertex(922, 175)
+	vertex(916, 289)
+	vertex(917, 289)
+	endShape()
+//details out window
+	stroke(255)
+	strokeWeight(3)
+	point(938, 158)
+	point(954, 152)
+	point(946, 169)
+	stroke(245, 221, 7)
+	strokeWeight(2)
+	fill(245, 221, 7)
+	ellipse(950, 197, 1, 10)
+	ellipse(952, 223, 1, 12)
+	ellipse(960, 193, 1, 40)
+	stroke(219, 142, 20)
+	line(966, 152, 974, 181)
+	line(976, 150, 985, 167)
+	line(975, 161, 985, 185)
 	noStroke()
-	fill(253, 159, 96)
-	ellipse(947, 284, 35, 50)
+	fill(255)
+	rect(940, 259, 20, 7)
+	rect(941, 277, 20, 5)
+	noStroke()
+	fill(92, 5, 42)
+	ellipse(967, 245, 20, 30)
+	ellipse(949, 255, 10, 20)
+	
 
-	strokeWeight(5)
-	stroke(180, 178, 30)
-	point(936, 265)
-	point(944, 263)
-	point(944, 266)
-	point(949, 263)
-	point(954, 265) 
-	point(960, 271) 
-	point(958, 264)
-	point(934, 268) 
-	point(945, 263) 
-	point(950, 263) 
 
 }
 
